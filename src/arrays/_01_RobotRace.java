@@ -12,8 +12,9 @@ public class _01_RobotRace {
 		Robot[] robs = new Robot[5];
 		for( int i = 0; i < robs.length; i++ ) {
 			robs[i] = new Robot();
-			robs[i].setX(100 + new Random().nextInt(500));
-			robs[i].setY(100 + new Random().nextInt(500));
+			robs[i].setX(100 + i*150);
+			//robs[i].setY(100 + new Random().nextInt(500));
+			robs[i].setY(200);
 		}
 
 	//2. create an array of 5 robots.
@@ -28,7 +29,7 @@ public class _01_RobotRace {
 		boolean exit = false;
 		for( int i = 0; i < robs.length; i++ ) {
 			Robot rob = robs[i];
-			rob.move(new Random().nextInt(50));
+			rob.move(new Random().nextInt(100));
 			if( rob.getY() <= 0 ) {
 				JOptionPane.showMessageDialog(null, "winner!");
 				exit = true;

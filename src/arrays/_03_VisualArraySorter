@@ -34,7 +34,7 @@ void draw() {
   //   the y value will the height variable
   //   the width is 1 (one)
   //   the height is negative the value of the element at the current index of the array
-  for( int i = 0; i < myArray.length; ++i){
+  for( int i = 0; i < myArray.length; ++i ){
     rect(i, height, 1, -myArray[i]);
   }
 

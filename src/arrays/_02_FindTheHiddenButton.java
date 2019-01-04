@@ -40,7 +40,7 @@ public class _02_FindTheHiddenButton implements ActionListener{
 		jButtons = new JButton[num];
 		for( int i=0; i < num; i++) {
 			jButtons[i] = new JButton();
-			jButtons[i].setText("" + i);
+			jButtons[i].setText(" " );//+ i);
 			jButtons[i].addActionListener(this);
 			panel.add(jButtons[i]);
 		}
@@ -70,7 +70,7 @@ public class _02_FindTheHiddenButton implements ActionListener{
 		//15. Use Thread.sleep(100); to pause the program.
 		//    Surround it with a try/catch
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(100);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

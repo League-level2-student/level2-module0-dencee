@@ -1,5 +1,6 @@
 package arrays;
 
+import java.util.Collections;
 import java.util.Random;
 
 public class _00_ArrayCheatSheet {
@@ -46,14 +47,22 @@ public class _00_ArrayCheatSheet {
 		System.out.println("largest:  " + largest);
 		
 		//9 print the entire array to see if step 8 was correct
-		for( int i=0; i<fifty.length; i++) {
-			System.out.print(fifty[i] + " ");
+		printIntArray( fifty );
+		
+		//Collections.sort(fifty);
+		java.util.Arrays.sort(fifty);
+		System.out.println("\n");
+		printIntArray( fifty );
+		
+		//10. print the largest number in the array.
+	}
+	
+	static void printIntArray( int[] array ){
+		for( int i=0; i<array.length; i++) {
+			System.out.print(array[i] + " ");
 			if( i != 0 && i % 10 == 0) {
 				System.out.println("");
 			}
 		}
-				
-		
-		//10. print the largest number in the array.
 	}
 }
